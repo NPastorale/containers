@@ -5,6 +5,8 @@ on:
     paths:
       - "kubectl/**"
   pull_request:
+    paths:
+      - "kubectl/**"
 
 jobs:
   get-version-from-package:
