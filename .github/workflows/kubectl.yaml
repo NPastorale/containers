@@ -2,13 +2,6 @@ name: Multiarch-build
 
 on:
   push:
-    branches:
-      - main
-    paths:
-      - "kubectl/**"
-  pull_request:
-    branches:
-      - main
     paths:
       - "kubectl/**"
 

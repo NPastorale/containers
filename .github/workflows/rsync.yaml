@@ -2,16 +2,8 @@ name: Multiarch-build
 
 on:
   push:
-    branches:
-      - main
     paths:
       - "rsync/**"
-  pull_request:
-    branches:
-      - main
-    paths:
-      - "rsync/**"
-
 jobs:
   get-version-from-package:
     uses: npastorale/workflows/.github/workflows/release-version-from-package.yaml@main
