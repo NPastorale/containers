@@ -11,6 +11,7 @@ jobs:
     uses: npastorale/workflows/.github/workflows/release-version-from-package.yaml@main
     with:
       package-name: kubectl
+      dockerfile: kubectl/Dockerfile
 
   multiarch-build:
     uses: npastorale/workflows/.github/workflows/multiarch-build.yaml@main
