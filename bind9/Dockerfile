@@ -5,7 +5,7 @@ LABEL org.opencontainers.image.source="https://github.com/NPastorale/containers"
 
 RUN apk update && \
     apk --no-cache add \
-    bind \
+    bind  \
     tzdata
 
 CMD [ "named", "-f" ]
