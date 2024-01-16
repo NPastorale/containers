@@ -27,5 +27,6 @@ jobs:
     with:
       username: npastorale
       release-version: ${{ needs.get-version-from-package.outputs.release-version }}
+      file: bind9/Dockerfile
     secrets:
       access-token: ${{ secrets.docker_token }}
