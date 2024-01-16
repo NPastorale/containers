@@ -8,7 +8,7 @@ ARG TARGETARCH
 RUN apk update && \
     apk add --no-cache \
     bash \
-    curl \
+    curl  \
     iputils-ping
 
 RUN curl -Lo /kubectl "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/${TARGETARCH}/kubectl"
