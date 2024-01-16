@@ -4,6 +4,9 @@ on:
   push:
     paths:
       - "bind9/**"
+  pull_request:
+    paths:
+      - "bind9/**"
 
 jobs:
   get-version-from-package:
