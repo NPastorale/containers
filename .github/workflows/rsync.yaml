@@ -23,6 +23,7 @@ jobs:
       packages: write
     with:
       username: npastorale
+      image: rsync
       release-version: ${{ needs.get-version-from-package.outputs.release-version }}
       dockerfile: rsync/Dockerfile
     secrets:

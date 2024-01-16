@@ -23,6 +23,7 @@ jobs:
       packages: write
     with:
       username: npastorale
+      image: kubectl
       release-version: ${{ needs.get-version-from-package.outputs.release-version }}
       dockerfile: kubectl/Dockerfile
     secrets:

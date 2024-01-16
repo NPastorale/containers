@@ -23,6 +23,7 @@ jobs:
       packages: write
     with:
       username: npastorale
+      image: bind
       release-version: ${{ needs.get-version-from-package.outputs.release-version }}
       dockerfile: bind9/Dockerfile
     secrets:
