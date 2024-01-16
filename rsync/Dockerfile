@@ -7,7 +7,7 @@ RUN apk update && \
     apk --no-cache add \
     rsync \
     bash \
-    curl \
+    curl  \
     tzdata
 
 ENTRYPOINT [ "rsync" ]
