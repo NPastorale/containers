@@ -2,13 +2,9 @@ name: Multiarch-build
 
 on:
   push:
-    branches:
-      - main
     paths:
       - "bind9/**"
   pull_request:
-    branches:
-      - main
     paths:
       - "bind9/**"
 
@@ -17,6 +13,7 @@ jobs:
     uses: npastorale/workflows/.github/workflows/release-version-from-package.yaml@main
     with:
       package-name: bind
+      dockerfile: bind9/Dockerfile
 
   multiarch-build:
     uses: npastorale/workflows/.github/workflows/multiarch-build.yaml@main
@@ -26,6 +23,8 @@ jobs:
       packages: write
     with:
       username: npastorale
+      image: bind
       release-version: ${{ needs.get-version-from-package.outputs.release-version }}
+      dockerfile: bind9/Dockerfile
     secrets:
       access-token: ${{ secrets.docker_token }}
