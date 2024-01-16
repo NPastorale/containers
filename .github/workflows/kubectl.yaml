@@ -21,6 +21,6 @@ jobs:
     with:
       username: npastorale
       release-version: ${{ needs.get-version-from-package.outputs.release-version }}
-      file: kubectl/Dockerfile
+      dockerfile: kubectl/Dockerfile
     secrets:
       access-token: ${{ secrets.docker_token }}
