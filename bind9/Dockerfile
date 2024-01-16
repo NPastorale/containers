@@ -4,7 +4,7 @@ LABEL maintainer="npastorale@gmail.com"
 
 RUN apk update && \
     apk --no-cache add \
-    bind  \
+    bind \
     tzdata
 
 CMD [ "named", "-f" ]
