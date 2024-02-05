@@ -9,22 +9,15 @@ on:
       - "bind9/**"
 
 jobs:
-  get-version-from-package:
-    uses: npastorale/workflows/.github/workflows/release-version-from-package.yaml@main
-    with:
-      package-name: bind
-      dockerfile: bind9/Dockerfile
-
   multiarch-build:
     uses: npastorale/workflows/.github/workflows/multiarch-build.yaml@main
-    needs: get-version-from-package
     permissions:
       contents: read
       packages: write
     with:
       username: npastorale
       image: bind
-      release-version: ${{ needs.get-version-from-package.outputs.release-version }}
+      package: bind
       dockerfile: bind9/Dockerfile
     secrets:
       access-token: ${{ secrets.docker_token }}
