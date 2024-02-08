@@ -11,13 +11,14 @@ ENV TZDATA_VERSION="2024a-r0"
 
 ARG BUILD_DATE
 ARG REVISION
+ARG VERSION
 
 LABEL org.opencontainers.image.created=${BUILD_DATE}
 LABEL org.opencontainers.image.authors="https://nahue.ar"
 LABEL org.opencontainers.image.url="https://github.com/NPastorale/containers/rsync"
 LABEL org.opencontainers.image.documentation="https://github.com/NPastorale/containers/rsync"
 LABEL org.opencontainers.image.source="https://github.com/NPastorale/containers"
-LABEL org.opencontainers.image.version=${BIND_VERSION}
+LABEL org.opencontainers.image.version=${VERSION}
 LABEL org.opencontainers.image.revision=${REVISION}
 LABEL org.opencontainers.image.licenses="MIT"
 LABEL org.opencontainers.image.title="rsync"
