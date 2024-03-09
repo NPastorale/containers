@@ -29,11 +29,11 @@ params:
     #   url: "https://gitlab.nahue.ar/"
     - name: GitHub
       icon: fa-brands fa-github fa-2x
-      weight: 2
+      weight: 1
       url: "https://github.com/NPastorale/"
     - name: LinkedIn
       icon: fa-brands fa-linkedin-in fa-2x
-      weight: 3
+      weight: 2
       url: "https://linkedin.com/in/npastorale/"
   plausibleAnalytics:
     domain: "podvader.com"
