@@ -1,0 +1,53 @@
+baseurl: https://podvader.com/
+languageCode: en
+title: PodVader
+theme: hugo-coder
+minify:
+  disableCSS: false
+  disableHTML: false
+  disableJS: false
+  disableJSON: false
+  disableSVG: false
+  disableXML: false
+  minifyOutput: true
+paginate: 20
+markup:
+  highlight:
+    style: nord
+params:
+  author: Nahuel Pastorale
+  info: Platform Engineer
+  description: Overengineering life
+  keywords: "blog,platform,personal"
+  faviconSVG: images/favicon.svg
+  colorScheme: auto
+  hidecolorschemetoggle: false
+  social:
+    # - name: GitLab
+    #   icon: fa-brands fa-gitlab fa-2x
+    #   weight: 1
+    #   url: "https://gitlab.nahue.ar/"
+    - name: GitHub
+      icon: fa-brands fa-github fa-2x
+      weight: 2
+      url: "https://github.com/NPastorale/"
+    - name: LinkedIn
+      icon: fa-brands fa-linkedin-in fa-2x
+      weight: 3
+      url: "https://linkedin.com/in/npastorale/"
+  plausibleAnalytics:
+    domain: "podvader.com"
+    serverURL: "plausible.nahue.ar"
+taxonomies:
+  category: categories
+  series: series
+  tag: tags
+  author: authors
+menu:
+  main:
+    - name: Blog
+      weight: 1
+      url: posts/
+    - name: About me
+      weight: 2
+      url: about/

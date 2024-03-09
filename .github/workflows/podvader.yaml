@@ -1,0 +1,23 @@
+name: Multiarch-build
+
+on:
+  push:
+    paths:
+      - "podvader/**"
+  pull_request:
+    paths:
+      - "podvader/**"
+
+jobs:
+  multiarch-build:
+    uses: npastorale/workflows/.github/workflows/multiarch-build.yaml@main
+    permissions:
+      contents: read
+      packages: write
+    with:
+      username: npastorale
+      image: podvader
+      package: podvader
+      dockerfile: podvader/Dockerfile
+    secrets:
+      access-token: ${{ secrets.docker_token }}

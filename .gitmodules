@@ -1,0 +1,3 @@
+[submodule "podvader/themes/hugo-coder"]
+	path = podvader/themes/hugo-coder
+	url = https://github.com/luizdepra/hugo-coder.git
