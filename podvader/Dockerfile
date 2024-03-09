@@ -2,7 +2,7 @@ FROM ghcr.io/hugomods/hugo:0.123.7 AS builder
 
 ENV PODVADER_VERSION="0.0.1"
 
-COPY . /src
+COPY /podvader /src
 
 RUN hugo --minify --gc
 
