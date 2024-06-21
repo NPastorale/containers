@@ -10,7 +10,7 @@ ARG BUILD_DATE
 ARG REVISION
 ARG VERSION
 
-FROM nginx:1.27.0-alpine-slim@sha256:e68bca20114b93f258d73d469ca0a5df0152b0fa73472dcf5c11a61d7bc6b814
+FROM nginx:1.27.0-alpine-slim@sha256:d5efcd7f2c3825808af9a968a8e78daa8d77327a44d092871666b2a020940b16
 
 LABEL org.opencontainers.image.created=${BUILD_DATE}
 LABEL org.opencontainers.image.authors="https://nahue.ar"
