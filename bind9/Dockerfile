@@ -1,4 +1,4 @@
-FROM alpine:3.20.1@sha256:b89d9c93e9ed3597455c90a0b88a8bbb5cb7188438f70953fede212a0c4394e0
+FROM alpine:3.14.10@sha256:0f2d5c38dd7a4f4f733e688e3a6733cb5ab1ac6e3cb4603a5dd564e5bfb80eed
 
 # renovate: datasource=repology depName=alpine_3_20/bind versioning=loose
 ENV BIND_VERSION="9.18.27-r0"
