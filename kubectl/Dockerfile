@@ -3,7 +3,7 @@ FROM alpine:3.20.2@sha256:0a4eaa0eecf5f8c050e5bba433f58c052be7587ee8af3e8b3910ef
 # renovate: datasource=repology depName=alpine_3_20/bash versioning=loose
 ENV BASH_VERSION="5.2.26-r0"
 # renovate: datasource=repology depName=alpine_3_20/curl versioning=loose
-ENV CURL_VERSION="8.9.1-r0"
+ENV CURL_VERSION="8.9.1-r1"
 # renovate: datasource=repology depName=alpine_3_20/iputils-ping versioning=loose
 ENV IPUTILS_PING_VERSION="20240117-r0"
 # renovate: datasource=repology depName=alpine_3_20/kubectl versioning=loose
