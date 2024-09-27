@@ -1,4 +1,4 @@
-FROM ghcr.io/hugomods/hugo:0.134.3@sha256:a4c528c70a0d2fda9b3b4fb7a2342f1fe03afda20fabe6acbb16fb4b2dc9ddb6 AS builder
+FROM ghcr.io/hugomods/hugo:0.135.0@sha256:ababd6609a3fdf7c7304cd771bb6cd6e724e339ccc2fc231a18b61640842e76e AS builder
 
 ENV PODVADER_VERSION="0.0.1"
 
