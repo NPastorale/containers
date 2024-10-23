@@ -5,5 +5,5 @@ services:
       - 1313:1313
     volumes:
       - ${PWD}:/src
-    image: ghcr.io/hugomods/hugo:0.136.3@sha256:80ff22ac2786cf4dc421af2e119d653abee20c7d792d1ddbc0aad32a44e19161
+    image: ghcr.io/hugomods/hugo:0.136.4@sha256:2bb61ee93ccb120a840ba3bddaadb2e06dea127e5b7c576ef9a51ab445ad049a
     command: hugo server --bind 0.0.0.0 -D --minify --gc
