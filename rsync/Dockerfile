@@ -1,13 +1,13 @@
 FROM alpine:3.21.0@sha256:21dc6063fd678b478f57c0e13f47560d0ea4eeba26dfc947b2a4f81f686b9f45
 
 # renovate: datasource=repology depName=alpine_3_21/bash versioning=loose
-ENV BASH_VERSION="5.2.26-r0"
+ENV BASH_VERSION="5.2.37-r0"
 # renovate: datasource=repology depName=alpine_3_21/curl versioning=loose
 ENV CURL_VERSION="8.11.0-r2"
 # renovate: datasource=repology depName=alpine_3_21/rsync versioning=loose
 ENV RSYNC_VERSION="3.3.0-r0"
 # renovate: datasource=repology depName=alpine_3_21/tzdata versioning=loose
-ENV TZDATA_VERSION="2024b-r0"
+ENV TZDATA_VERSION="2024b-r1"
 
 ARG BUILD_DATE
 ARG REVISION
