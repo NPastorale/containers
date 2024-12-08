@@ -1,9 +1,9 @@
-FROM alpine:3.20.3@sha256:1e42bbe2508154c9126d48c2b8a75420c3544343bf86fd041fb7527e017a4b4a
+FROM alpine:3.21.0@sha256:21dc6063fd678b478f57c0e13f47560d0ea4eeba26dfc947b2a4f81f686b9f45
 
-# renovate: datasource=repology depName=alpine_3_20/bind versioning=loose
+# renovate: datasource=repology depName=alpine_3_21/bind versioning=loose
 ENV BIND_VERSION="9.18.31-r0"
-# renovate: datasource=repology depName=alpine_3_20/tzdata versioning=loose
-ENV TZDATA_VERSION="2024b-r0"
+# renovate: datasource=repology depName=alpine_3_21/tzdata versioning=loose
+ENV TZDATA_VERSION="2024b-r1"
 
 ARG BUILD_DATE
 ARG REVISION
