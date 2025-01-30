@@ -7,7 +7,7 @@ ENV CURL_VERSION="8.11.1-r0"
 # renovate: datasource=repology depName=alpine_3_21/iputils-ping versioning=loose
 ENV IPUTILS_PING_VERSION="20240905-r0"
 # renovate: datasource=repology depName=alpine_3_21/kubectl versioning=loose
-ENV KUBECTL_VERSION="1.31.3-r0"
+ENV KUBECTL_VERSION="1.31.3-r1"
 
 ARG BUILD_DATE
 ARG REVISION
