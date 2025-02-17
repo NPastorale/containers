@@ -10,7 +10,8 @@ minify:
   disableSVG: false
   disableXML: false
   minifyOutput: true
-paginate: 20
+pagination:
+  pagerSize: 10
 markup:
   highlight:
     style: nord
