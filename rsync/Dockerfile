@@ -7,7 +7,7 @@ ENV CURL_VERSION="8.12.1-r1"
 # renovate: datasource=repology depName=alpine_3_21/rsync versioning=loose
 ENV RSYNC_VERSION="3.4.0-r0"
 # renovate: datasource=repology depName=alpine_3_21/tzdata versioning=loose
-ENV TZDATA_VERSION="2025a-r0"
+ENV TZDATA_VERSION="2025b-r0"
 
 ARG BUILD_DATE
 ARG REVISION
