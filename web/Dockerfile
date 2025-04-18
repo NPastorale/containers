@@ -3,6 +3,7 @@ FROM node:22.14.0-alpine AS builder
 WORKDIR /app
 
 RUN mkdir /app/dist
+
 RUN mkdir /app/dist/css
 
 RUN npm install html-minifier postcss-cli cssnano
