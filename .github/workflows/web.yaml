@@ -1,0 +1,23 @@
+name: Multiarch-build
+
+on:
+  push:
+    paths:
+      - "web/**"
+  pull_request:
+    paths:
+      - "web/**"
+
+jobs:
+  multiarch-build:
+    uses: npastorale/workflows/.github/workflows/multiarch-build.yaml@main
+    permissions:
+      contents: read
+      packages: write
+    with:
+      username: npastorale
+      image: web
+      package: web
+      dockerfile: web/Dockerfile
+    secrets:
+      access-token: ${{ secrets.docker_token }}
