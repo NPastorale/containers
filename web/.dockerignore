@@ -12,3 +12,6 @@ Dockerfile
 # Ignore other common files not needed in build
 *.md
 .env*
+
+#Test
+podvader/
