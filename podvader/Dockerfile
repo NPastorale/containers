@@ -14,7 +14,7 @@ FROM nginx:1.27.5-alpine-slim@sha256:b947b2630c97622793113555e13332eec85bdc7a0ac
 
 LABEL org.opencontainers.image.created=${BUILD_DATE}
 LABEL org.opencontainers.image.authors="https://nahue.ar"
-LABEL org.opencontainers.image.url="https://github.com/NPastorale/containers/rsync"
+LABEL org.opencontainers.image.url="https://github.com/NPastorale/containers/podvader"
 LABEL org.opencontainers.image.documentation="https://github.com/NPastorale/containers/podvader"
 LABEL org.opencontainers.image.source="https://github.com/NPastorale/containers"
 LABEL org.opencontainers.image.version=${VERSION}
