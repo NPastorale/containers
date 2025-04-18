@@ -19,5 +19,6 @@ jobs:
       image: podvader
       package: podvader
       dockerfile: podvader/Dockerfile
+      checkout_submodules: true
     secrets:
       access-token: ${{ secrets.docker_token }}
