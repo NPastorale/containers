@@ -1,13 +1,13 @@
-FROM alpine:3.22.2@sha256:4b7ce07002c69e8f3d704a9c5d6fd3053be500b7f1c69fc0d80990c2ad8dd412
+FROM alpine:3.23.0@sha256:51183f2cfa6320055da30872f211093f9ff1d3cf06f39a0bdb212314c5dc7375
 
-# renovate: datasource=repology depName=alpine_3_22/bash versioning=loose
-ENV BASH_VERSION="5.2.37-r0"
-# renovate: datasource=repology depName=alpine_3_22/curl versioning=loose
-ENV CURL_VERSION="8.14.1-r2"
-# renovate: datasource=repology depName=alpine_3_22/iputils-ping versioning=loose
-ENV IPUTILS_PING_VERSION="20240905-r0"
-# renovate: datasource=repology depName=alpine_3_22/kubernetes versioning=loose
-ENV KUBECTL_VERSION="1.33.1-r4"
+# renovate: datasource=repology depName=alpine_3_23/bash versioning=loose
+ENV BASH_VERSION="5.3.3-r1"
+# renovate: datasource=repology depName=alpine_3_23/curl versioning=loose
+ENV CURL_VERSION="8.17.0-r1"
+# renovate: datasource=repology depName=alpine_3_23/iputils-ping versioning=loose
+ENV IPUTILS_PING_VERSION="20250605-r0"
+# renovate: datasource=repology depName=alpine_3_23/kubernetes versioning=loose
+ENV KUBECTL_VERSION="1.34.2-r1"
 
 ARG BUILD_DATE
 ARG REVISION
