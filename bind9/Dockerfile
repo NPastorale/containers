@@ -1,7 +1,7 @@
 FROM alpine:3.23.3@sha256:25109184c71bdad752c8312a8623239686a9a2071e8825f20acb8f2198c3f659
 
 # renovate: datasource=repology depName=alpine_3_23/bind versioning=loose
-ENV BIND_VERSION="9.20.19-r0"
+ENV BIND_VERSION="9.20.20-r0"
 # renovate: datasource=repology depName=alpine_3_23/tzdata versioning=loose
 ENV TZDATA_VERSION="2025c-r0"
 
