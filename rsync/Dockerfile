@@ -5,7 +5,7 @@ ENV BASH_VERSION="5.3.9-r1"
 # renovate: datasource=repology depName=alpine_3_24/curl versioning=loose
 ENV CURL_VERSION="8.21.0-r0"
 # renovate: datasource=repology depName=alpine_3_24/rsync versioning=loose
-ENV RSYNC_VERSION="3.4.3-r1"
+ENV RSYNC_VERSION="3.5.0-r0"
 # renovate: datasource=repology depName=alpine_3_24/tzdata versioning=loose
 ENV TZDATA_VERSION="2026c-r0"
 
